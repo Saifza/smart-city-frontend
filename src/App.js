@@ -1,24 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import EnergyList from './features/energy/EnergyList';
+import TrafficList from './features/traffic/TrafficList';
+import EmergencyList from './features/emergency/EmergencyList';
+import WasteList from './features/waste/WasteList';
+import TrafficHeatmap from './features/traffic/TrafficHeatmap';
+import TrafficForm from './features/traffic/TrafficForm';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container mt-4">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary rounded shadow-sm px-4 mb-4">
+  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+    <li className="nav-item">
+       <NavLink
+  to="/"
+  className={({ isActive }) => 
+    `nav-link fw-bold ${isActive ? 'text-warning' : 'text-white'}`
+}
+>
+  ⚡ Energy
+</NavLink>
+    </li>
+<li className="nav-item"> <NavLink to="/traffic"className={({ isActive }) => 
+    `nav-link fw-bold ${isActive ? 'text-warning' : 'text-white'}`
+}>  🚦 Traffic
+</NavLink>
+</li>
+<li className="nav-item">
+       <NavLink
+  to="/emergency"
+  className={({ isActive }) => 
+    `nav-link fw-bold ${isActive ? 'text-warning' : 'text-white'}`
+}
+>
+  🚨 Emergency
+</NavLink>
+ </li>
+   <li className="nav-item">
+       <NavLink
+  to="/waste"
+  className={({ isActive }) => 
+    `nav-link fw-bold ${isActive ? 'text-warning' : 'text-white'}`
+}
+>
+  🗑️ Waste
+</NavLink>
+ </li>
+
+  </ul>
+</nav>
+
+        <Routes>
+          <Route path="/" element={<EnergyList />} />
+         <Route path="/traffic" element={<TrafficList />} />
+         <Route path="/traffic-heatmap" element={<TrafficHeatmap />} />
+          <Route path="/emergency" element={<EmergencyList />} />
+          <Route path="/waste" element={<WasteList />} />
+
+            
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

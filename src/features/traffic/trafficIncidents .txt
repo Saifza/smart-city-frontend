@@ -1,0 +1,69 @@
+{
+  "location": {
+    "latitude": 39.099,
+    "longitude": -94.578
+  },
+  "description": "Major accident on I-70",
+  "severity": "HIGH",
+  "timestamp": "2025-04-17T14:30:00Z"
+}
+
+{
+  "location": {
+    "latitude": 39.10,
+    "longitude": -94.56
+  },
+  "description": "Traffic congestion near downtown",
+  "severity": "MEDIUM",
+  "timestamp": "2025-04-17T13:45:00Z"
+}
+
+
+{
+  "location": {
+    "latitude": 39.11,
+    "longitude": -94.55
+  },
+  "description": "Minor roadwork on 18th Street",
+  "severity": "LOW",
+  "timestamp": "2025-04-17T12:15:00Z"
+}
+
+{
+  "location": {
+    "latitude": 39.099,
+    "longitude": -94.578
+  },
+  "description": "Multi-car accident",
+  "severity": "HIGH",
+  "timestamp": "2025-04-17T15:00:00"
+}
+
+{
+  "location": {
+    "latitude": 39.099,
+    "longitude": -94.578
+  },
+  "description": "Crash test",
+  "severity": "HIGH",
+  "timestamp": "2025-04-17T12:00:00"
+}
+
+
+{
+  "location": {
+    "latitude": 39.12,
+    "longitude": -94.57
+  },
+  "description": "Vehicle breakdown reported",
+  "severity": "MEDIUM"
+}
+
+{
+  "location": {
+    "latitude": 39.08,
+    "longitude": -94.60
+  },
+  "description": "Event traffic delay",
+  "severity": "LOW"
+}
