@@ -10,8 +10,8 @@ Built with **React** and **Bootstrap**.
 ## 📦 Features
 - ✅ Traffic Heatmap (with live WebSocket updates)
 - ✅ Energy Monitoring Dashboard
-- 🔄 Waste Collection Dashboard (coming soon)
-- 🔄 Emergency Incident Dashboard (coming soon)
+- 🔄 Waste Collection Dashboard 
+- 🔄 Emergency Incident Dashboard (with live WebSocket updates)
 
 ---
 
@@ -19,7 +19,7 @@ Built with **React** and **Bootstrap**.
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-username/smart-city-management-frontend.git
+    git clone https://github.com/Saifza/smart-city-management-frontend.git
     cd smart-city-management-frontend
     ```
 
@@ -63,6 +63,6 @@ Built with **React** and **Bootstrap**.
 ---
 
 ## ⚡ Notes
-- Backend API must be running at `http://localhost:8081` for full functionality.
+- Backend API must be running at `http://localhost:8081` (Traffic), 'http://localhost:8082' (waste), `http://localhost:8083' (energy) and `http://localhost:8084' (emergency)   for full      	functionality.
 - Google Maps API key is required (already configured).
 

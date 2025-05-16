@@ -1,13 +1,16 @@
 // App.js
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import EnergyList from './features/energy/EnergyList';
 import TrafficList from './features/traffic/TrafficList';
-import EmergencyList from './features/emergency/EmergencyList';
-import WasteList from './features/waste/WasteList';
+import EmergencyView from './features/emergency/EmergencyView';
+
+import WasteView from './features/waste/WasteView';
 import TrafficHeatmap from './features/traffic/TrafficHeatmap';
 import TrafficForm from './features/traffic/TrafficForm';
+
 
 
 function App() {
@@ -56,14 +59,13 @@ function App() {
 </nav>
 
         <Routes>
-          <Route path="/" element={<EnergyList />} />
-         <Route path="/traffic" element={<TrafficList />} />
-         <Route path="/traffic-heatmap" element={<TrafficHeatmap />} />
-          <Route path="/emergency" element={<EmergencyList />} />
-          <Route path="/waste" element={<WasteList />} />
-
-            
-        </Routes>
+ 		 <Route path="/" element={<EnergyList />} />
+		  <Route path="/traffic" element={<TrafficList />} />
+ 		 <Route path="/traffic-heatmap" element={<TrafficHeatmap />} />
+  		<Route path="/waste" element={<WasteView />} />
+		<Route path="/emergency" element={<EmergencyView />} />
+               
+	</Routes>
       </div>
     </Router>
   );
